@@ -58,7 +58,7 @@
       <workItem from="1539935497409" duration="474000" />
       <workItem from="1539935987688" duration="13000" />
       <workItem from="1539936006498" duration="1817000" />
-      <workItem from="1591459141783" duration="2837000" />
+      <workItem from="1591459141783" duration="3651000" />
     </task>
     <task id="LOCAL-00001" summary="Update dependencies. Remove vulnerabilities.&#10;Reformat code.&#10;Remove yarn lockfile, add npm lockfile.">
       <created>1591460232566</created>
@@ -67,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591460232566</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add state for Square to mark it as clicked.">
+      <created>1591462277117</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591462277117</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -87,21 +94,22 @@
       <path value="$PROJECT_DIR$/my-app" />
     </ignored-roots>
     <MESSAGE value="Update dependencies. Remove vulnerabilities.&#10;Reformat code.&#10;Remove yarn lockfile, add npm lockfile." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update dependencies. Remove vulnerabilities.&#10;Reformat code.&#10;Remove yarn lockfile, add npm lockfile." />
+    <MESSAGE value="Add state for Square to mark it as clicked." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add state for Square to mark it as clicked." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591460565596">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1591460565596" />
-    <state x="395" y="0" width="915" height="824" key="CommitChangelistDialog2" timestamp="1591460231197">
+    <state x="395" y="0" width="915" height="824" key="CommitChangelistDialog2" timestamp="1591462276090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="395" y="0" width="915" height="824" key="CommitChangelistDialog2/0.1080.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1591460231197" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1591460349309">
+    <state x="395" y="0" width="915" height="824" key="CommitChangelistDialog2/0.1080.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1591462276090" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1591462281846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.1080.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1591460349309" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.1080.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1591462281846" />
     <state x="523" y="316" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1591460341145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
