@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+const SIZE = 3;
+
 function Square(props) {
     return (
         <button className='square' onClick={props.onClick}>
@@ -22,15 +24,15 @@ class Board extends React.Component {
 
     renderRowOfSquares(rowNumber) {
         const currentRow = [];
-        for (let col = 0; col < 3; col++) {
-            currentRow.push(this.renderSquare(rowNumber * 3 + col));
+        for (let col = 0; col < SIZE; col++) {
+            currentRow.push(this.renderSquare(rowNumber * SIZE + col));
         }
         return <div className='board-row'>{currentRow}</div>;
     }
 
     renderBoard() {
         const board = [];
-        for (let row = 0; row < 3; row++) {
+        for (let row = 0; row < SIZE; row++) {
             board.push(this.renderRowOfSquares(row));
         }
         return board;
@@ -51,6 +53,8 @@ class Game extends React.Component {
         this.state = {
             history: [{
                 squares: new Array(0).fill(null),
+                row: null,
+                col: null,
             }],
             stepNumber: 0,
             xIsNext: true,
@@ -69,6 +73,8 @@ class Game extends React.Component {
         this.setState({
             history: history.concat([{
                 squares: squares,
+                row: Math.floor(i / SIZE),
+                col: i % SIZE,
             }]),
             stepNumber: history.length,
             xIsNext: !this.state.xIsNext,
@@ -89,7 +95,7 @@ class Game extends React.Component {
 
         const moves = history.map((step, move) => {
             const desc = move ?
-                'Go to move #' + move :
+                `Go to move # ${move} at row ${step.row} col ${step.col}` :
                 'Go to game start';
             return (
                 <li key={move}>
