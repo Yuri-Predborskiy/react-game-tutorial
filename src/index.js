@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 const SIZE = 3;
+const NO_WINNER = 'DRAW';
 
 function Square(props) {
     return (
@@ -106,7 +107,11 @@ class Game extends React.Component {
 
         let status;
         if (winner) {
-            status = 'Winner: ' + winner;
+            if (winner === NO_WINNER) {
+                status = 'Draw! No moves left';
+            } else {
+                status = 'Winner: ' + winner;
+            }
         } else {
             status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
         }
@@ -151,6 +156,17 @@ function calculateWinner(squares) {
         if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
             return squares[a];
         }
+    }
+
+    const gridSize = SIZE ** 2;
+    let moveCount = 0;
+    for (let i = 0; i < gridSize; i++) {
+        if (squares[i]) {
+            moveCount++;
+        }
+    }
+    if (moveCount === gridSize) {
+        return NO_WINNER;
     }
     return null;
 }
